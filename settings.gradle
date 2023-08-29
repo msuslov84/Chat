@@ -1,4 +1,8 @@
 rootProject.name = 'Chat'
 include 'common'
+findProject(':common')?.name = 'common'
 include 'client'
+findProject(':client')?.name = 'client'
+include 'server'
+findProject(':server')?.name = 'server'
 
